@@ -29,8 +29,8 @@
             <Keywords name="Keywords3">break continue exit _exit return</Keywords>
             <Keywords name="Keywords4">if for foreach whiile do switch case</Keywords>
             <Keywords name="Keywords5">CopyFile DeleteFile RenameFile access chdir fclose feof fgets fopen fputs mkdir rmdir system</Keywords>
-            <Keywords name="Keywords6">local global sub</Keywords>
-            <Keywords name="Keywords7">null default</Keywords>
+            <Keywords name="Keywords6">local global sub use</Keywords>
+            <Keywords name="Keywords7">null default true false</Keywords>
             <Keywords name="Keywords8">== != &lt; &lt;= &gt; &gt;= &amp; | ^ &amp;&amp; || &lt;&lt; &gt;&gt; . ? : %</Keywords>
             <Keywords name="Delimiters">00&quot; 01\ 02&quot; 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
         </KeywordLists>
