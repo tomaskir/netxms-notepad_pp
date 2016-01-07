@@ -1,3 +1,10 @@
+v2016010701:
+  Added new functions from 2.0 release to syntax highlight and calltips
+  Fixed cosmetic errors in Calltips
+  Fixed multi-line comments not being styled
+  Fixed escaped quote breaking styling in strings
+  Files moved to GitHub
+
 v2014102202:
   Added a few missing calltips
 

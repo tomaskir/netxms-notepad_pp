@@ -37,6 +37,10 @@
 			</Overload>
 		</KeyWord>
 		
+		<KeyWord name="AgentReadList" func="yes">
+
+		</KeyWord>
+		
 		<KeyWord name="AgentReadParameter" func="yes">
 			<Overload retVal="" descr="
 			Description
@@ -49,14 +53,7 @@
 		</KeyWord>
 		
 		<KeyWord name="AgentReadTable" func="yes">
-			<Overload retVal="" descr="
-			Description
-			  
-			
-			Returns
-			  ">
-				<Param name="" />
-			</Overload>
+
 		</KeyWord>
 		
 		<KeyWord name="BindObject" func="yes">
@@ -125,6 +122,17 @@
 			</Overload>
 		</KeyWord>
 		
+		<KeyWord name="CreateNode" func="yes">
+			<Overload retVal="" descr="
+			Description
+			  Create a node object.
+			
+			Returns
+			  Reference to newly created object or NULL on failure.">
+				<Param name="parent, name, primaryHostName" />
+			</Overload>
+		</KeyWord>
+		
 		<KeyWord name="CreateSNMPTransport" func="yes">
 			<Overload retVal="" descr="
 			Description
@@ -180,6 +188,10 @@
 			</Overload>
 		</KeyWord>
 		
+		<KeyWord name="_exit" func="yes">
+
+		</KeyWord>
+		
 		<KeyWord name="exp" func="yes">
 			<Overload retVal="" descr="
 			Description
@@ -188,6 +200,32 @@
 			Returns
 			  e^power expressed as a real number.">
 				<Param name="power" />
+			</Overload>
+		</KeyWord>
+		
+		<KeyWord name="FindAllDCIs" func="yes">
+
+		</KeyWord>
+		
+		<KeyWord name="FindAlarmById" func="yes">
+			<Overload retVal="" descr="
+			Description
+			  Find active (non-terminated) alarm by alarm ID.
+			
+			Returns
+			  Alarm object or null if no such alarm exist.">
+				<Param name="id" />
+			</Overload>
+		</KeyWord>
+		
+		<KeyWord name="FindAlarmByKey" func="yes">
+			<Overload retVal="" descr="
+			Description
+			  Find active (non-terminated) alarm by alarm key.
+			
+			Returns
+			  Alarm object or null if no such alarm exist.">
+				<Param name="key" />
 			</Overload>
 		</KeyWord>
 		
@@ -335,6 +373,10 @@
 				<Param name="node, id" />
 			</Overload>
 		</KeyWord>
+        
+        <KeyWord name="GetDCIValues" func="yes">
+
+		</KeyWord>
 		
 		<KeyWord name="GetDCIValueByDescription" func="yes">
 			<Overload retVal="" descr="
@@ -367,6 +409,14 @@
 			  String value of requested parameter or NULL if no such parameter exist.">
 				<Param name="event, parameterName" />
 			</Overload>
+		</KeyWord>
+		
+		<KeyWord name="gethostbyaddr" func="yes">
+
+		</KeyWord>
+		
+		<KeyWord name="gethostbyname" func="yes">
+
 		</KeyWord>
 		
 		<KeyWord name="GetInterfaceName" func="yes">
@@ -438,6 +488,19 @@
 			</Overload>
 		</KeyWord>
 		
+		<KeyWord name="GetNodeTemplates" func="yes">
+			<Overload retVal="" descr="
+			Description
+			  Get accessible template objects for given node.
+			
+			Returns
+              Array of objects, with first object placed at index 0.
+              End of list indicated by array element with null value.
+              Return value also affected by trusted nodes settings (see &quot;Security Issues&quot; on wiki for more information).">
+				<Param name="node" />
+			</Overload>
+		</KeyWord>
+		
 		<KeyWord name="GetObjectChildren" func="yes">
 			<Overload retVal="" descr="
 			Description
@@ -477,14 +540,7 @@
 		</KeyWord>
 		
 		<KeyWord name="GetSituationAttribute" func="yes">
-			<Overload retVal="" descr="
-			Description
-			  
-			
-			Returns
-			  ">
-				<Param name="" />
-			</Overload>
+
 		</KeyWord>
 		
 		<KeyWord name="gmtime" func="yes">
@@ -621,6 +677,10 @@
 			</Overload>
 		</KeyWord>
 		
+		<KeyWord name="mapList" func="yes">
+
+		</KeyWord>
+		
 		<KeyWord name="max" func="yes">
 			<Overload retVal="" descr="
 			Description
@@ -630,6 +690,10 @@
 			  Maximal value of numbers.">
 				<Param name="number1 [,number2] [,number n]" />
 			</Overload>
+		</KeyWord>
+		
+		<KeyWord name="md5" func="yes">
+
 		</KeyWord>
 		
 		<KeyWord name="min" func="yes">
@@ -675,6 +739,17 @@
 			Returns
 			  x raised to the power of y.">
 				<Param name="x, y" />
+			</Overload>
+		</KeyWord>
+		
+		<KeyWord name="PushDCIData" func="yes">
+			<Overload retVal="" descr="
+			Description
+			  Push new DCI value from script.
+			
+			Returns
+			  No return value.">
+				<Param name="node, dciId, value" />
 			</Overload>
 		</KeyWord>
 		
@@ -800,6 +875,14 @@
 			</Overload>
 		</KeyWord>
 		
+		<KeyWord name="sha1" func="yes">
+
+		</KeyWord>
+		
+		<KeyWord name="sha256" func="yes">
+
+		</KeyWord>
+		
 		<KeyWord name="SNMPGet" func="yes">
 			<Overload retVal="" descr="
 			Description
@@ -850,14 +933,7 @@
 		</KeyWord>
 		
 		<KeyWord name="strftime" func="yes">
-			<Overload retVal="" descr="
-			Description
-			  
-			
-			Returns
-			  ">
-				<Param name="" />
-			</Overload>
+
 		</KeyWord>
 		
 		<KeyWord name="substr" func="yes">
@@ -953,6 +1029,17 @@
 			Returns
 			  Source string converted to uppercase.">
 				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		
+		<KeyWord name="x2d" func="yes">
+			<Overload retVal="" descr="
+			Description
+			  Returns the decimal value of a hexadecimal.
+			
+			Returns
+			  Decimal value of hex-number.">
+				<Param name="hex-number" />
 			</Overload>
 		</KeyWord>
 		
