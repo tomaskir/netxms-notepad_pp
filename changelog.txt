@@ -1,0 +1,24 @@
+v2014102202:
+  Added a few missing calltips
+
+v2014102201:
+  Added function calltips!
+  Added new functions from 1.2.17
+
+v2014091901:
+  Fixed auto extention handling (.nxs - for real this time)
+  Added .xml extension to the file for easier import into Notepad++
+
+v2014081801:
+  Fixed auto extention handling (broken in v2014081701)
+  Fixed some keywords missing (broken in v2014081701)
+
+v2014081701:
+  Added missing keywords provided by Alex Kirhenshtein
+
+v2014081601:
+  Added auto extention handling (.nxs) 
+  Added a few missing keywords and operators
+
+v2014081501:
+  Original syntax file
